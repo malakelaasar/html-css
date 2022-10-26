@@ -1,0 +1,137 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: roboto;
+   
+
+}
+.header{
+    min-height:100vh;
+    width:100%;
+    background-image: image("../alamain campus.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items:center;
+}
+nav img{ 
+    width: 150px;
+     
+
+}
+.nav-links{
+    flex:1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding:8px 12px;
+    position:relative;
+
+}
+.nav-links ul li a{
+    color:rgb(121, 96, 168);
+    text-decoration:none;
+    font-size: 14px;
+    font-family: roboto;
+
+}
+.nav-links ul li::after{
+    content:'';
+    width:0%;
+    height:2px;
+    background:#8977ee;
+    display:block;
+    margin:auto;
+
+}
+.nav-links ul li:hover:after{
+    width:100%;
+
+}
+.text-box{
+    width: 90%;
+    color:rgb(121, 101, 153);
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:align;
+
+}
+.text-box h1{
+    font-size:50px;
+
+}
+.text-box p{
+    margin:10px 0 40px;
+    font-size:14px;
+    color:rgb(116, 89, 141);
+}
+.hero-btn{
+    display:inline-block;
+    text-decoration:none;
+    color:rgb(34, 7, 7);
+    border: 1px solidrgb(58, 14, 14);
+    padding: 12px 34px;
+    font-size: 13px;
+    background:#8977ee;
+    position: relative;
+    cursor: pointer;
+
+}
+.hero-btn:hover{
+    border:1px solid#9973f1;
+    background:#9973f1;
+    transition:1s;
+
+}
+@media (max-width:700px){
+    .text-box h1{
+        font-size:20px;
+    }
+    .nav-links ul li{
+        display:block;
+    }
+    .nav-links{
+        position:absolute;
+        background:#f44336;
+        height:100vh;
+        width:200px;
+        top: 0;
+        right:0;
+        text-align:left;
+
+    }
+    nav .fa{
+        display: block;
+        color:#fff;
+        margin: 10px;
+    }
+
+}
+.courses{
+    width:80%;
+    margin:0;
+    text-align:left;
+    padding-top:100px ;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+
+}
+
